@@ -33,4 +33,25 @@ async function loadNavbar() {
     }
 }
 
+async function loadFooter() {
+    const footerContainer = document.getElementById("footer");
+
+    if (!footerContainer) return;
+
+    try {
+        const response = await fetch("components/footer.html");
+
+        if (!response.ok) {
+            throw new Error("Could not load footer");
+        }
+
+        footerContainer.innerHTML = await response.text();
+
+    } catch (error) {
+        console.error("Footer loading error:", error);
+    }
+}
+
+// Call the functions
 loadNavbar();
+loadFooter();

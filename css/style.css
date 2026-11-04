@@ -8,62 +8,69 @@
     color: red;
     size: 16px;
 }
+
 .hero {
-   min-height: 690px;
-  padding: 65px 8% 35px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 45px;
-  overflow: hidden;
+    min-height: 690px;
+    padding: 65px 8% 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 45px;
+    overflow: hidden;
 }
+
 .hero-content {
-   min-height: 690px;
-  padding: 65px 8% 35px;
-  justify-content: space-between;
-  align-items: center;
-  gap: 45px;
-  overflow: hidden;
-  flex: 1;
-  max-width: 430px;
+    min-height: 690px;
+    padding: 65px 8% 35px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 45px;
+    overflow: hidden;
+    flex: 1;
+    max-width: 430px;
 }
+
 .eyebrow {
-  display: inline-block;
-  background-color: #CEDBE880;
-  color: #0A4D8C;
-  font-size: 10px;
-  font-weight: 600;
-  padding: 10px;
-  border-radius: 36px;
-  margin-bottom: 22px;
+    display: inline-block;
+    background-color: #CEDBE880;
+    color: #0A4D8C;
+    font-size: 10px;
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 36px;
+    margin-bottom: 22px;
 }
+
 .hero h1 {
-  font-size: clamp (34px, 4vw,46px);
-  line-height: 1.15;
-  letter-spacing: -1px;
-  color: #030304;
-  font-weight: 600;
-  margin-bottom: 15px;
+    font-size: clamp (34px, 4vw, 46px);
+    line-height: 1.15;
+    letter-spacing: -1px;
+    color: #030304;
+    font-weight: 600;
+    margin-bottom: 15px;
 }
+
 .hero h1 span {
-  color: #123F6B;
+    color: #123F6B;
 }
+
 .hero-description {
-  max-width: 400;
-  color: #64748B;
-  font-size: 16px;
-  line-height: 24px;
-  vertical-align: middle;
-  margin: 20px 0;
+    max-width: 400;
+    color: #64748B;
+    font-size: 16px;
+    line-height: 24px;
+    vertical-align: middle;
+    margin: 20px 0;
 }
-.hero-buttons{
+
+.hero-buttons {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     gap: 10px;
     margin-top: 22px;
-    
 }
+
 .how-btn {
     display: inline-flex;
     align-items: center;
@@ -74,6 +81,7 @@
     padding: 14px 24px;
     border-radius: 24px;
 }
+
 .download-btn {
     display: flex;
     background-color: #0A4D8C;
@@ -83,7 +91,8 @@
     border-radius: 24px;
     font-weight: 600;
     font-size: 13px;
-} 
+}
+
 
 /* .hero-screen{
     pos
@@ -95,8 +104,6 @@
 
 } */
 
-
-
 .features {
     padding: 25px 8% 45px;
     display: flex;
@@ -104,6 +111,7 @@
     align-items: center;
     gap: 20px;
 }
+
 .feature {
     display: flex;
     align-items: center;
@@ -113,6 +121,7 @@
     background-color: #FFFFFF;
     padding: 10px 24px;
 }
+
 .feature-icon {
     flex-shrink: 0;
     width: 43px;
@@ -125,25 +134,30 @@
     justify-content: center;
     font-size: 19px;
 }
-.book-icon{
+
+.book-icon {
     background-color: #e8edf6;
     border-radius: 10px;
 }
-.chart.icon{
+
+.chart.icon {
     background-color: #eef0f6;
 }
+
 .feature h3 {
     font-size: 14px;
     color: #0A4D8C;
     margin-bottom: 6px;
 }
+
 .feature p {
     font-size: 11px;
-    color:#64748B ;
+    color: #64748B;
     line-height: 24px;
 }
 
-   /* CONTACT HTML */
+
+/* CONTACT HTML */
 
 .hero {
     background: #183a85;
@@ -156,28 +170,34 @@
     padding: 60px 488px;
     color: #FFFFFF;
 }
+
 .hero h1 {
     font-size: 64px;
     font-weight: 700;
     margin-bottom: 12px;
     color: #FFFFFF;
 }
+
 .hero p {
     font-size: 20px;
     font-weight: 600;
     color: #E2EEFA;
 }
 
-  /* CONTACT-SECTION */
 
-  .contact-section {
+/* CONTACT-SECTION */
+
+.contact-section {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 11px;
     padding: 55px 5%;
     background-color: #fff;
 }
-   /* Left side */
+
+
+/* Left side */
+
 .contact-info h2,
 .contact-form h2 {
     font-size: 24px;
@@ -185,6 +205,7 @@
     margin-bottom: 12px;
     font-weight: 600;
 }
+
 .description {
     font-size: 14px;
     line-height: 20px;
@@ -193,12 +214,15 @@
     margin-bottom: 35px;
     border: 1px;
 }
+
 .info-item {
     display: flex;
     align-items: center;
     gap: 15px;
     margin-bottom: 30px;
 }
+
+
 /* .info.icon {
     width: 48px;
     height: 48px;
@@ -209,15 +233,18 @@
     font-size: 23px;
     flex-shrink: 0; 
 } */
+
 .info-item h3 {
     font-size: 18px;
     color: #102A43;
     margin-bottom: 5px;
     font-weight: 600;
 }
+
 .info-item p {
     font-size: 12px;
     color: #102A43;
 }
-/* RIGHT SIDE */
 
+
+/* RIGHT SIDE */
