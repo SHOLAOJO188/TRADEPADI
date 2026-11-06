@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html  lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -22,59 +22,81 @@
         <header class="hero">
             <h1>Let's talk.</h1>
             <p>Questions, feedback, or need a hand? we're here to help.</p>
-                <img src="../assets/line.png ">
+                <img src="../assets/container (8).svg" alt="underline">
         </header>
 
         <section class="contact-section">
             <!-- Left side -->
             <div class="contact-info">
                 <h2>Get in touch</h2>
-                <p> Tell us how we can help. Fill out the form and <br>
+                <p class="description"> Tell us how we can help. Fill out the form and <br>
                      the TradePadi team will get back to you.</p>
 
-                     <div class="info-team">
-                        <div class="info-icon"><img src="../assets/container (4).svg"></div>
-                        <div class="description">
+                     <div class="info-item">
+                        <div class="info-icon">
+                            <img src="../assets/container (4).svg" alt="Email">
+                        </div>
+                        <div>
                             <h3>Email support</h3>
                             <p>Add your official support email here</p>
                         </div>
 
                      </div>
 
-                     <div class="info-team">
-                        <div class="info-icon"><img src="../assets/container (5).svg"></div>
-                        <div class="description">
+                     <div class="info-item">
+                        <div class="info-icon">
+                            <img src="../assets/container (5).svg" alt="chatbox">
+                        </div>
+                        <div>
                             <h3>App support</h3>
                             <p>Help with using Tradepadi</p>
                         </div>
 
                      </div>
 
-                     <div class="info-team">
-                        <div class="info-icon"><img src="../assets/container (6).svg"></div>
-                        <div class="description">
+                     <div class="info-item">
+                        <div class="info-icon">
+                            <img src="../assets/container (6).svg" alt="location">
+                        </div>
+                        <div>
                             <h3>We're buiding for you </h3>
                             <p>Your feedback helps us improve</p>
                         </div>
                      </div>
-                     </div>
+            </div>
 
                      <!-- Right side -->
                       <div class="contact-form">
                         <h2>Send us a message</h2>
-                        <p>We usually respond as soon as we can </p>
+                        <p class="description">We usually respond as soon as we can </p>
 
                         <form action="#" method="post">
                             <div class="form-group">
                                 <label for="">Full Name</label>
                                 <input type="text" id="fullname"
                                  name="fullname"
-                                placeholder="Enter your fullname required">
+                                placeholder="Enter your fullname">
                             </div>
 
                             <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email"
+                                name="email"
+                                placeholder="enter your email">
 
                             </div>
+
+                            <div class="form-group">
+                                <label for="message">message</label>
+                                <textarea id="message" 
+                                name="message" rows="5"
+                                placeholder="Write your message here"></textarea>
+
+                            </div>
+
+                            <button type="button">send message
+                                <span><img src="../assets/container (7).svg" alt="send-button"></span>
+                            </button>
 
                         </form>
 
@@ -83,6 +105,8 @@
         </section>
     </main>
 
+      <!-- Shared footer -->
+        <div id="footer"></div>
 
     <!-- Shared JavaScript -->
     <script src="js/main.js" defer></script>
