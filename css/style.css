@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: "DM sans", sans-serif;
+}
+
+
 .class {
     color: red;
     size: 16px;
@@ -188,10 +193,16 @@
 
 /* Left side */
 
-.contact-info h2,
-.contact-form h2 {
+.contact-info h2{
     font-size: 24px;
     color: #0A4D8C;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.contact-form h2 {
+    font-size: 24px;
+    color: #102A43;
     margin-bottom: 12px;
     font-weight: 600;
 }
@@ -203,6 +214,14 @@
     max-width: 340px;
     color: #647A90;
     margin-bottom: 35px;
+}
+.description-form {
+   font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    max-width: 340px;
+    color: #64748B;
+    margin-bottom: 35px; 
 }
 
 .info-item {
@@ -332,7 +351,7 @@
 }
 
 .about-description {
-    color: #45464C;
+    color: #64748B;
     font-size: 20px;
     font-weight: 600;
     line-height: 24px;
