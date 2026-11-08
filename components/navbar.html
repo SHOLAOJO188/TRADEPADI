@@ -1,39 +1,44 @@
-<header class="w-full bg-white border-b border-gray-100">
+<header class="w-full bg-white border-b border-gray-100 relative z-50">
     <nav class="max-w-6xl mx-auto px-6 lg:px-10 h-20 flex items-center justify-between">
 
         <!-- Logo -->
-        <img src="/assets/logo.png" alt="Logo" class="h-10 w-auto">
-        <!-- Navigation Links -->
-        <div class=" hidden md:flex items-center gap-8 ">
-
-            <a href="index.html " data-page="index.html " class="nav-link text-sm font-medium text-slate-600 transition-colors duration-200 hover:text-[#159A9C] cursor-pointer">
-        Home
-      </a>
-
-            <a href="HowItWorks.html " data-page="how-it-works.html " class="nav-link text-sm font-medium text-slate-600 transition-colors duration-200 hover:text-[#159A9C] cursor-pointer">
-        How It Works
-      </a>
-
-            <a href="about.html " data-page="about.html " class="nav-link text-sm font-medium text-slate-600 transition-colors duration-200 hover:text-[#159A9C] cursor-pointer">
-        About Us
-      </a>
-
-            <a href="contact.html " data-page="contact.html " class="nav-link text-sm font-medium text-slate-600 transition-colors duration-200 hover:text-[#159A9C] cursor-pointer">
-        Contact
-      </a>
-
-        </div>
-
-        <!-- Download Button -->
-        <a href="#download " class="hidden md:flex items-center gap-2 bg-[#07549A] hover:bg-[#06447D] text-white text-sm font-semibold px-6 py-3 rounded-full transition-colors ">
-
-            <svg xmlns="http://www.w3.org/2000/svg " width="18 " height="18 " viewBox="0 0 24 24 " fill="none " stroke="currentColor " stroke-width="2 " stroke-linecap="round " stroke-linejoin="round ">
-        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4 "/>
-        <polyline points="7 10 12 15 17 10 "/>
-        <line x1="12 " x2="12 " y1="15 " y2="3 "/>
-      </svg> Download
+        <a href="index.html">
+            <img src="/assets/logo.png" alt="Logo" class="h-10 w-auto">
         </a>
 
+        <!-- Desktop Navigation Links -->
+        <div class="hidden md:flex items-center gap-8">
+            <a href="index.html" data-page="index.html" class="nav-link text-sm font-medium text-slate-600 transition-colors duration-200 hover:text-[#159A9C] cursor-pointer">Home</a>
+            <a href="HowItWorks.html" data-page="how-it-works.html" class="nav-link text-sm font-medium text-slate-600 transition-colors duration-200 hover:text-[#159A9C] cursor-pointer">How It Works</a>
+            <a href="about.html" data-page="about.html" class="nav-link text-sm font-medium text-slate-600 transition-colors duration-200 hover:text-[#159A9C] cursor-pointer">About Us</a>
+            <a href="contact.html" data-page="contact.html" class="nav-link text-sm font-medium text-slate-600 transition-colors duration-200 hover:text-[#159A9C] cursor-pointer">Contact</a>
+        </div>
+
+        <!-- Desktop Download Button -->
+        <a href="#download" class="hidden md:flex items-center gap-2 bg-[#07549A] hover:bg-[#06447D] text-white text-sm font-semibold px-6 py-3 rounded-full transition-colors">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                <polyline points="7 10 12 15 17 10"/>
+                <line x1="12" x2="12" y1="15" y2="3"/>
+            </svg> Download
+        </a>
+
+        <!-- Mobile Hamburger Button -->
+        <button id="mobile-menu-btn" class="md:hidden flex flex-col justify-between w-7 h-5 bg-transparent border-none cursor-pointer z-50">
+            <span class="block w-full h-[2.5px] bg-[#07549A] rounded-full transition-all duration-300 origin-center"></span>
+            <span class="block w-full h-[2.5px] bg-[#07549A] rounded-full transition-all duration-300"></span>
+            <span class="block w-full h-[2.5px] bg-[#07549A] rounded-full transition-all duration-300 origin-center"></span>
+        </button>
+
     </nav>
-</header>
+
+    <!-- Mobile Menu Dropdown -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 absolute top-20 left-0 w-full shadow-lg">
+        <div class="flex flex-col px-6 py-4 gap-4">
+            <a href="index.html" class="text-sm font-medium text-slate-600 hover:text-[#159A9C]">Home</a>
+            <a href="HowItWorks.html" class="text-sm font-medium text-slate-600 hover:text-[#159A9C]">How It Works</a>
+            <a href="about.html" class="text-sm font-medium text-slate-600 hover:text-[#159A9C]">About Us</a>
+            <a href="contact.html" class="text-sm font-medium text-slate-600 hover:text-[#159A9C]">Contact</a>
+        </div>
+    </div>
 </header>

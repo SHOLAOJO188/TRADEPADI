@@ -15,6 +15,34 @@ async function loadNavbar() {
 
         navbarContainer.innerHTML = navbarHTML;
 
+        // --- MOBILE MENU LOGIC ---
+        const menuBtn = document.getElementById("mobile-menu-btn");
+        const mobileMenu = document.getElementById("mobile-menu");
+        const menuSpans = menuBtn ? menuBtn.querySelectorAll("span") : [];
+
+        if (menuBtn && mobileMenu) {
+            menuBtn.addEventListener("click", () => {
+                const isOpen = !mobileMenu.classList.contains("hidden");
+
+                // Toggle the menu visibility
+                mobileMenu.classList.toggle("hidden");
+
+                // Animate the hamburger lines
+                if (!isOpen) {
+                    // Turn into X
+                    menuSpans[0].style.transform = "translateY(8px) rotate(45deg)";
+                    menuSpans[1].style.opacity = "0";
+                    menuSpans[2].style.transform = "translateY(-8px) rotate(-45deg)";
+                } else {
+                    // Revert back to hamburger
+                    menuSpans[0].style.transform = "none";
+                    menuSpans[1].style.opacity = "1";
+                    menuSpans[2].style.transform = "none";
+                }
+            });
+        }
+
+
         // Highlight the current page
         const currentPage = window.location.pathname
             .split("/")
